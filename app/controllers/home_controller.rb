@@ -3,7 +3,7 @@ class HomeController < ApplicationController
   
   end
   
-  def add_account
+  def add_twitter_account
 
     account = TwitterAccount.find_by username: params[:username]
 
