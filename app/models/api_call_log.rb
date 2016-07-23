@@ -7,7 +7,7 @@ class ApiCallLog < ActiveRecord::Base
       @api_call_log.call_description = message
       @api_call_log.successful = successful
       @api_call_log.end_point_path = path
-      @api_call_log.human_readable_id = handle
+      @api_call_log.human_readable_id = id
       @api_call_log.static_id = handle
       @api_call_log.records_inserted = records_inserted
       
