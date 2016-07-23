@@ -13,10 +13,7 @@ class HomeController < ApplicationController
     
       Twitter.add_twitter_account(params[:username])
       
-      
-      # respond_to do |format|
-      #     format.html { render :text => "account " + params[:username] + " has been added to the process queue" }
-      # end
+      redirect_to twitter_accounts_path
 
     else
 
