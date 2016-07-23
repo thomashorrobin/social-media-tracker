@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fb_page_id: 
+  snapshot_date: 2016-07-21
+  page_likes: 1
+
+two:
+  fb_page_id: 
+  snapshot_date: 2016-07-21
+  page_likes: 1

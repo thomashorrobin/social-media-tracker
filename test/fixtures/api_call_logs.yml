@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  call_description: MyString
+  call_date_time: 2016-07-20 22:01:21
+  successful: false
+  end_point_path: MyString
+  human_readable_id: MyString
+  static_id: MyString
+  records_inserted: 1
+
+two:
+  call_description: MyString
+  call_date_time: 2016-07-20 22:01:21
+  successful: false
+  end_point_path: MyString
+  human_readable_id: MyString
+  static_id: MyString
+  records_inserted: 1

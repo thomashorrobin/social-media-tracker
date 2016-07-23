@@ -1,0 +1,11 @@
+<h1>Home</h1>
+<hr>
+<h2>Add Twitter Account</h2>
+<p>Enter the users Twitter handle below to pull their data from the API</p>
+<br>
+<%= form_tag("/home/addaccount") do %>
+  <%= label_tag(:username, "Add username:") %>
+  <%= text_field_tag(:username) %>
+  <%= submit_tag("Add") %>
+<% end %>
+<hr>
