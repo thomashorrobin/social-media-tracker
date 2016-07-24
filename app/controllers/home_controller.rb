@@ -24,4 +24,9 @@ class HomeController < ApplicationController
     end
     
   end
+
+  def add_facebook_page
+    @fb = Facebook.add_facebook_page(params[:username])
+    redirect_to fb_pages_path
+  end
 end

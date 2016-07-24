@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :twitter_accounts
   get 'home/index'
   post 'home/addtwitteraccount' => 'home#add_twitter_account'
+  post 'home/addfacebookpage' => 'home#add_facebook_page'
 
   resources :api_call_logs
   # The priority is based upon order of creation: first created -> highest priority.

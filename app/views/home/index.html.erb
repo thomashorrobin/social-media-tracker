@@ -9,3 +9,12 @@
   <%= submit_tag("Add") %>
 <% end %>
 <hr>
+<h2>Add Facebook Page</h2>
+<p>Enter the users Twitter handle below to pull their data from the API</p>
+<br>
+<%= form_tag("/home/addfacebookpage") do %>
+  <%= label_tag(:username, "Add username:") %>
+  <%= text_field_tag(:username) %>
+  <%= submit_tag("Add") %>
+<% end %>
+<hr>
