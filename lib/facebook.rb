@@ -20,7 +20,7 @@ class Facebook
         @fb_page = FbPage.new
 
         @fb_page.page_id = fb_page['id']
-        @fb_page.page_name = fb_page['name']
+        @fb_page.page_name = fb_page['username']
 
         @fb_page.save
 
