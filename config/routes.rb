@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :fb_pages
+  resources :fb_pages do
+    member do
+      get 'snapshot'
+    end
+  end
   resources :twitter_accounts
   get 'home/index'
   post 'home/addtwitteraccount' => 'home#add_twitter_account'
