@@ -23,5 +23,7 @@ class Facebook
         @fb_page.page_name = fb_page['name']
 
         @fb_page.save
+
+        ApiCallLog.write_to_api_call_log("added " + fb_page['username'] + " to fb page list", true, fb_page['link'], fb_page['id'], fb_page['username'], 1)
     end
 end
