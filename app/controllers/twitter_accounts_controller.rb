@@ -7,6 +7,13 @@ class TwitterAccountsController < ApplicationController
     @twitter_accounts = TwitterAccount.all
   end
 
+  def snapshot
+    Twitter.take_twitter_account_snapshot(params[:id])
+    respond_to do |format|
+        format.html { render :text => "done" }
+    end
+  end
+
   # GET /twitter_accounts/1
   # GET /twitter_accounts/1.json
   def show

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   resources :fb_pages
-  resources :twitter_accounts
+  resources :twitter_accounts do
+    member do
+      get 'snapshot'
+    end
+  end
   get 'home/index'
   post 'home/addtwitteraccount' => 'home#add_twitter_account'
   post 'home/addfacebookpage' => 'home#add_facebook_page'
