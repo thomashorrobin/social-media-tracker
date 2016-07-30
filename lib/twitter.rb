@@ -95,4 +95,11 @@ class Twitter
       
       ApiCallLog.write_to_api_call_log("Called the users/show end point to retrive data on " + twitter_account.username + " for " + Date.today.to_s, true, '/users/show', twitter_account.twitter_id, twitter_account.username, 1)
     end
+
+    def self.snapshot_all
+      t = TwitterAccount.all
+      t.each do |account|
+        Twitter.take_twitter_account_snapshot(account.id)
+      end
+    end
 end
