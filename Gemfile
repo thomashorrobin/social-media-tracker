@@ -18,8 +18,6 @@ gem 'oauth'
 
 gem 'json'
 
-gem 'sidekiq'
-
 gem "koala", "~> 2.2"
 
 # Use jquery as the JavaScript library
