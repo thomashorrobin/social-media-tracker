@@ -7,6 +7,13 @@ class FbPagesController < ApplicationController
     @fb_pages = FbPage.all
   end
 
+  def snapshot
+    Facebook.take_fb_page_snapshot(params[:id])
+    respond_to do |format|
+        format.html { render :text => "done" }
+    end
+  end
+
   # GET /fb_pages/1
   # GET /fb_pages/1.json
   def show

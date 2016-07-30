@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  resources :fb_pages
   resources :twitter_accounts do
+    member do
+      get 'snapshot'
+    end
+  end
+  resources :fb_pages do
     member do
       get 'snapshot'
     end
