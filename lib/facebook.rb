@@ -3,7 +3,7 @@ class Facebook
 
         # require 'koala'
 
-        oauth_access_token = "EAACEdEose0cBAOiLpQ8qlArhynhsjhhCbZCGdWLTnxKCj6MFNA7m5b74IbHw0W3NrKo7ZAFZBAOaCOwyfg7JjiSfw5YBsM2ZBVzlizjpn3te0cwPlf9NECBOlfnxb8jYqsmpZAV9ZAOnfxZAmjkoGpw3N1b1YbSHacZBqwZBQtDMfQwZDZD"
+        oauth_access_token = "EAACEdEose0cBAIpA9CeK6RPxafQQWse9TyBoBTZBeaGrs22mRDSfkJ1XnL9QiJzW7ZAiMIlHrtGXfzP9ZB3XsTqEnRLLtZCG0WNMKlxZADtEzvVv95ZAInEnSX9fcWqFswonlkRAeZAJ0Mx0gpvhWjSqhZA3meejie84PwW9pe1WcQZDZD"
 
         # @graph = Koala::Facebook::API.new(oauth_access_token)
 
@@ -29,7 +29,7 @@ class Facebook
 
         todays_date = Date.today
 
-        oauth_access_token = "EAACEdEose0cBALLJ6HrA0q5E0Qxec17gPZA7OEuFWohNeQt16zGU9tBAwNdeNIiLLvKxnl7QqEyZAUv5iYvvjSfxjhCeWm4cqwdS8W3JYsLfcL6pXE1NmIP0R8MdPyi70broBZA2V71x8SNVZBXpMbmIwb7TXen2NFbjATl8tgZDZD"
+        oauth_access_token = "EAACEdEose0cBAIpA9CeK6RPxafQQWse9TyBoBTZBeaGrs22mRDSfkJ1XnL9QiJzW7ZAiMIlHrtGXfzP9ZB3XsTqEnRLLtZCG0WNMKlxZADtEzvVv95ZAInEnSX9fcWqFswonlkRAeZAJ0Mx0gpvhWjSqhZA3meejie84PwW9pe1WcQZDZD"
 
         @graph = Koala::Facebook::API.new(oauth_access_token)
 
