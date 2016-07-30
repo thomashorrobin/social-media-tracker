@@ -26,5 +26,7 @@ module SocialMediaTracker
     config.active_job.queue_adapter = :sidekiq
 
     config.autoload_paths << Rails.root.join('lib')
+
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
   end
 end
