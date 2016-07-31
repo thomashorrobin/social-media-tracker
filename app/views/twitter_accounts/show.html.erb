@@ -15,5 +15,32 @@
   <%= @twitter_account.display_name %>
 </p>
 
-<%= link_to 'Edit', edit_twitter_account_path(@twitter_account) %> |
+<hr>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Followers</th>
+      <th>Following</th>
+      <th>Tweets</th>
+      <th>Likes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @twitter_account.twitter_account_snapshots.each do |snapshot| %>
+      <tr>
+        <td><%= snapshot.snapshot_date.to_s %></td>
+        <td><%= snapshot.followers_count.to_s %></td>
+        <td><%= snapshot.following_count.to_s %></td>
+        <td><%= snapshot.tweets.to_s %></td>
+        <td><%= snapshot.like_count.to_s %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<hr>
+
 <%= link_to 'Back', twitter_accounts_path %>

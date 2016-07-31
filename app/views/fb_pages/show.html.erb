@@ -10,5 +10,28 @@
   <%= @fb_page.page_name %>
 </p>
 
-<%= link_to 'Edit', edit_fb_page_path(@fb_page) %> |
+<hr>
+
+<h3>History</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Likes</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fb_page.fb_page_snapshots.each do |snapshot| %>
+      <tr>
+        <td><%= snapshot.snapshot_date.to_s %></td>
+        <td><%= snapshot.page_likes.to_s %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<hr>
+
 <%= link_to 'Back', fb_pages_path %>
