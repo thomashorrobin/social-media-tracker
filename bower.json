@@ -15,8 +15,5 @@
     "vendor/assets/components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "c3": "^0.4.11"
-  }
+  ]
 }
