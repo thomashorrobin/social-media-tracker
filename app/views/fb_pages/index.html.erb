@@ -18,6 +18,7 @@
         <td><%= fb_page.page_name %></td>
         <td><%= link_to 'Show', fb_page %></td>
         <td><%= link_to 'Snapshot', take_fb_snapshot(fb_page) %></td>
+        <td><%= link_to 'Chart', show_fb_chart(fb_page) %></td>
         <td><%= link_to 'Edit', edit_fb_page_path(fb_page) %></td>
         <td><%= link_to 'Destroy', fb_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

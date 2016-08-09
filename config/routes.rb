@@ -2,11 +2,13 @@ Rails.application.routes.draw do
   resources :twitter_accounts do
     member do
       get 'snapshot'
+      get 'chart'
     end
   end
   resources :fb_pages do
     member do
       get 'snapshot'
+      get 'chart'
     end
   end
   get 'home/index'

@@ -7,6 +7,10 @@ class FbPagesController < ApplicationController
     @fb_pages = FbPage.all
   end
 
+  def chart
+
+  end
+
   def snapshot
     Facebook.take_fb_page_snapshot(params[:id])
     respond_to do |format|

@@ -7,6 +7,10 @@ class TwitterAccountsController < ApplicationController
     @twitter_accounts = TwitterAccount.all
   end
 
+  def chart
+  
+  end
+
   def snapshot
     Twitter.take_twitter_account_snapshot(params[:id])
     respond_to do |format|
