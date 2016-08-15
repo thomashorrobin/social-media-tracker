@@ -14,7 +14,7 @@
 # end
 #
 
-every :day, :at => '4:20am' do
+every 1.day, :at => '4:30 am' do
   runner "Twitter.snapshot_all"
 end
 
